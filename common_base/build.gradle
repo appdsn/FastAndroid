@@ -70,6 +70,19 @@ android {
             consumerProguardFiles 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            // so库文件，这里我写 `libs`，它就会去 `libs` 目录中找，你也可以放在其它任何目录中。
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'//aar包路径声明
+    }
 }
 
 dependencies {
@@ -77,6 +90,8 @@ dependencies {
     api project(':common_core')
     api project(':common_library:ucrop')
     api project(':common_library:mobsharesdk')
+
+    api files('libs/oaid_sdk_1.0.25.aar')
     /*基础业务依赖库*/
     api ('com.xiaoniu.statistic:NiuData:1.1.5.1'){changing = true}
     api 'com.alibaba:arouter-api:1.4.1'

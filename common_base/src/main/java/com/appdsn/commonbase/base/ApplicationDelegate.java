@@ -2,6 +2,8 @@ package com.appdsn.commonbase.base;
 
 import android.app.Application;
 import android.content.Context;
+import android.os.Build;
+import android.util.Log;
 import android.webkit.WebView;
 
 import com.appdsn.commonbase.BuildConfig;
@@ -15,6 +17,9 @@ import com.appdsn.commonbase.utils.ChannelUtils;
 import com.appdsn.commoncore.base.IApplicationDelegate;
 import com.appdsn.library.MobShareSDK;
 import com.appdsn.library.model.ShareConfig;
+import com.bun.miitmdid.core.MdidSdkHelper;
+import com.bun.miitmdid.interfaces.IIdentifierListener;
+import com.bun.miitmdid.interfaces.IdSupplier;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.xiaoniu.statistic.Configuration;
 import com.xiaoniu.statistic.NiuDataAPI;
@@ -53,6 +58,7 @@ public class ApplicationDelegate implements IApplicationDelegate {
         }
         initNiuData(application);
         initXNShareSDK(application);
+        initOAID(application);
     }
 
     private void initXNShareSDK(Application application) {
@@ -70,6 +76,20 @@ public class ApplicationDelegate implements IApplicationDelegate {
                 .logOpen()//打开sdk日志信息
                 .channel(ChannelUtils.getChannelId())
         );
+    }
+
+
+    public void initOAID(Application application) {
+        if (Build.VERSION.SDK_INT >= 29) {
+            MdidSdkHelper.InitSdk(application, true, new IIdentifierListener() {
+                @Override
+                public void OnSupport(boolean b, final IdSupplier idSupplier) {
+                    Log.i("XNPushReceiver", "oaid:" + idSupplier.getOAID());
+                }
+            });
+        }
+
+
     }
 
     @Override
