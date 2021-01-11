@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_titlebar_demo" />
+
+    <Button
+        android:id="@+id/btnSetLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="可设置一个左边按钮" />
+
+    <Button
+        android:id="@+id/btnAddRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="可添加多个右边按钮" />
+
+    <Button
+        android:id="@+id/btnSetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="自定义左边标题" />
+
+    <Button
+        android:id="@+id/btnSetCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="TitleBar覆盖模式" />
+
+    <Button
+        android:id="@+id/btnTranslucent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="沉浸式状态栏" />
+</LinearLayout>

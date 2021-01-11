@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_0" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_2" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_3" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_4" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_5" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_6" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_7" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_8" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_9" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_10" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_11" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_12" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_13" />
+
+    <!--下面是反向动画-->
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_13_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_12_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_11_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_10_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_9_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_8_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_7_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_6_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_5_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_4_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_3_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_2_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_1_1" />
+    <item
+        android:duration="50"
+        android:drawable="@drawable/loading_0_1" />
+</animation-list>

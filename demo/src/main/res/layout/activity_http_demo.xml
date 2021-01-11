@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_20dp"
+    tools:context=".http.HttpDemoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:lineSpacingExtra="@dimen/dimen_5dp"
+        android:text="需要根据自己项目的需求，修改HttpHelper中的网络配置，包括错误统一处理，请求头设置，超时时间，baseUrl，sslSocketFactory，apiResult。
+        使用方法可以直接调用HttpHelper类中的get(),post()方法并参入URL和数据参数，也可以使用Retrofit风格的API，具体参照HttpHelper。" />
+
+
+</LinearLayout>

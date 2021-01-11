@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="banner_indicatorId" type="id" />
+
+    <!--版本更新-->
+    <item name="update_content" type="id" />
+    <item name="update_title" type="id" />
+    <item name="update_id_ok" type="id" />
+    <item name="update_id_cancel" type="id" />
+
+    <item name="update_progress_bar" type="id" />
+    <item name="update_progress_text" type="id" />
+
+</resources>

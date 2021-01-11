@@ -1,0 +1,41 @@
+第一步：源码包依赖到工程
+第二步：主module中配置key
+defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"//, "x86_64","x86"
+        }
+//        需要配置以下key值
+        manifestPlaceholders = [
+                JPUSH_PKGNAME:"您应用的包名",
+                JPUSH_APPKEY : "a7cc82f3871424f6a0a1d395",
+                JPUSH_CHANNEL: "developer-default",
+
+                XIAOMI_APPKEY : "5471888131082", // 小米平台注册的appkey
+                XIAOMI_APPID  : "2882303761518881082", // 小米平台注册的appid
+                OPPO_APPKEY   : "030dddb7c4dd4f0294785dc56374fe42", // OPPO平台注册的appkey
+                OPPO_APPID    : "30429431", // OPPO平台注册的appid
+                OPPO_APPSECRET: "171551131e224f8b9cf992c97319e56c",//OPPO平台注册的appsecret
+                VIVO_APPKEY   : "a47358421887e6b5a5adb74bce469942", // VIVO平台注册的appkey
+                VIVO_APPID    : "105306243", // VIVO平台注册的appid
+        ]
+}
+
+第三步：适配华为厂商通道
+    1：添加仓库地址
+    maven {url 'http://developer.huawei.com/repo/'}
+    2：华为插件地址
+    dependencies {
+        classpath 'com.huawei.agconnect:agcp:1.2.1.301'
+    }
+    3：在 Huawei官网上创建和 JPush 上同包名的待发布应用,创建完成后下载该应用的 agconnect-services.json 配置文件
+    并添加到应用主module目录下（HUAWEI_APPID可以不用配置了）。
+    4：主module中引入依赖插件
+    apply plugin: 'com.huawei.agconnect'
+
+第四步：SDK使用
+XNPushSDK先调用init初始化
+其他方法自行查看

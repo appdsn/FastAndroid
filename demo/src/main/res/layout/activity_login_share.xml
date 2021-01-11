@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnWXLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="微信登录" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnWXShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="微信分享" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnQQLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="QQ登录" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnQQShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="QQ分享" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnOpenShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="打开分享面板" />
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:src="@drawable/base_icon_back" />
+
+        <LinearLayout
+            android:id="@+id/laySearchCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_search_city_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_16dp"
+                android:layout_height="@dimen/dimen_16dp"
+                android:src="@drawable/common_ic_search" />
+
+            <EditText
+                android:id="@+id/et_search_city_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="输入关键字搜索城市/乡镇"
+                android:textColorHint="#FFCFC2C2"
+                android:textColor="#FF3F3535"
+                android:background="@null"
+                android:textSize="@dimen/dimen_14dp"
+                android:lines="1"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/iv_search_city_clear"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:padding="@dimen/dimen_5dp"
+                android:src="@drawable/ic_back_close"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySelectCity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@drawable/shape_location_city_bg">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_location_city"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="定位中"
+                android:textColor="@color/color_747474"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp">
+
+        </com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView>
+
+    </LinearLayout>
+
+    <com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView>
+
+</LinearLayout>

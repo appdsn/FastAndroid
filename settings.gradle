@@ -1,0 +1,10 @@
+include ':permission'
+include ':app',
+        ':common_core',
+        ':common_base',
+        ':common_library:mobsharesdk',
+        ':common_library:jpush',
+        ':common_library:ucrop', 
+        ':demo',
+        ':common_library:mobstatisticsdk'
+

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title> 协议调试</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,
+           minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <style type="text/css">
+		a{text-decoration : none;
+		 color:white;
+		}
+#main {
+  width: wrap;
+  height: wrap;
+  border: 1px solid #c3c3c3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: flex-start;
+  justify-content : center;
+}
+#main div {
+  width: 50%;
+  height: 50px;
+  justify-content:center;
+  line-height:50px;
+  text-align:center;
+  font-size:12px
+}
+
+#main margin {
+  line-height:12px;
+}
+
+
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<div style="margin-top:36px;"/>
+
+<div>
+
+    <div id="main">
+        <div style="background-color:#DC143C;">
+            <a href="fastdev://com.xiaoniu.fastdev/main/browser?h5_url=https://m.taobao.com/?sprefer=sypc00">跳转H5页面</a>
+        </div>
+
+        <div style="background-color:#0000FF;">
+            <a href="fastdev://com.xiaoniu.fastdev/scheme/simple_native?native_extra=我是由H5中携带过来的参数">本地原生</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

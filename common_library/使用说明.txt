@@ -1,0 +1,4 @@
+**common_library** 文件夹里用来放一些通用第三方库的
+因为，某些三方库没有提供远程依赖，或者有些时候需要修改某些三方库源码，这时就需要直接依赖Module里的源码，
+然后在 **settings.gradle** 中加入 ':common_library:[三方库 Module 名]' (在实际项目中记得去除中括号 '[]')，
+即可在 common_base的build.gradle中依赖

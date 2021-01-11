@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.appdsn.commoncore.widget.radius.RadiusTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        app:rv_topLeftRadius="@dimen/dimen_5dp"
+        app:rv_topRightRadius="@dimen/dimen_5dp"
+        android:layout_gravity="center_horizontal"
+        app:rv_backgroundColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="选择要切换的环境"
+        app:rv_textColor="@color/color_262626" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+        <com.appdsn.commoncore.widget.radius.RadiusTextView
+            android:id="@+id/test_environment_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_weight="1"
+            app:rv_bottomLeftRadius="@dimen/dimen_5dp"
+            app:rv_backgroundColor="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="测试环境"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.appdsn.commoncore.widget.radius.RadiusTextView
+            android:id="@+id/product_environment_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_weight="1"
+            app:rv_bottomRightRadius="@dimen/dimen_5dp"
+            app:rv_backgroundColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="生产环境"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

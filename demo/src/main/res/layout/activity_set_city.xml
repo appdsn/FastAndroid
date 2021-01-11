@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/laySearchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_search_city_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_ic_search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="输入关键字搜索城市/乡镇"
+            android:textColor="#FFCFC2C2"
+            android:textSize="@dimen/dimen_14dp"
+            android:lines="1" />
+    </LinearLayout>
+
+    <com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.appdsn.commoncore.widget.xrecyclerview.XRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/laySetCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/btnEditCity"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:background="@drawable/shape_comm_bg_red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/zg_drawer_edit_city_icon"
+                android:drawablePadding="3dp"
+                android:layout_gravity="center"
+                android:lines="1"
+                android:text="编辑城市"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnAddCity"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_comm_bg_red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/zg_drawer_add_city_icon"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:lines="1"
+                android:text="添加城市"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFinishSet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@drawable/shape_comm_bg_red"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:lines="1"
+        android:text="完成"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="16sp" />
+</LinearLayout>

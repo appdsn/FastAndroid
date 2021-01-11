@@ -1,0 +1,68 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from:"config.gradle"//统一配置管理文件
+buildscript {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+
+        jcenter()
+        google()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://www.jitpack.io" }
+        //添加 牛数 maven 库地址
+        maven {
+            url 'http://pre.xnshandai.net/nexus/content/repositories/niudata'
+        }
+
+        /*新浪*/
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+
+        /*华为*/
+        maven { url 'http://developer.huawei.com/repo/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath('com.tencent.tinker:tinker-patch-gradle-plugin:1.9.9')
+        classpath 'com.leon.channel:plugin:2.0.2'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0' // add plugin
+        classpath 'com.huawei.agconnect:agcp:1.2.1.301'/*华为*/
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+
+        jcenter()
+        google()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://www.jitpack.io" }
+        //添加 牛数 maven 库地址
+        maven {
+            url 'http://pre.xnshandai.net/nexus/content/repositories/niudata'
+        }
+
+        /*新浪*/
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+
+        /*华为*/
+        maven { url 'http://developer.huawei.com/repo/' }
+    }
+}
+
+ext {
+    compileSdkVersion = 29
+    minSdkVersion = 19
+    targetSdkVersion = 22
+    versionCode = 4
+    versionName = "1.0.3"
+    buildToolsVersion = '27.0.3'
+    supportLibVersion = "27.1.1"
+    constraint = '2.0.0-alpha1'
+    eventbus ='3.1.1'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

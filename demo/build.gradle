@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.appdsn.fastdemo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.ext.versionName
+        versionCode rootProject.ext.versionCode
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'armeabi'
+        }
+        /*解决ARouter::Compiler >>> No module name编译报错*/
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true/*tinker编译报错*/
+                arguments = [AROUTER_MODULE_NAME: project.getName(),
+                             //必须，告知RxHttp你依赖的okhttp版本，目前已适配 v3.12.0 - v4.8.1版本  (v4.3.0除外)
+                             rxhttp_okhttp: '3.8.0',
+                             //使用asXxx方法时必须，告知RxHttp你依赖的rxjava版本，可传入rxjava2、rxjava3
+                             rxhttp_rxjava: 'rxjava2',
+                             rxhttp_package: 'com.appdsn.fastdemo.weather.rxhttp'   //非必须，指定RxHttp类包名
+                ]
+            }
+        }
+        packagingOptions {
+            //解决编译时 More than one file was found with OS independent path 'META-INF/rxjava.properties'错误
+            exclude 'META-INF/rxjava.properties'
+        }
+
+        //个推
+        buildConfigField("String", "GETUI_APP_ID", "\""+GETUI_APP_ID+"\"")
+        buildConfigField("String", "GETUI_APP_KEY", "\""+GETUI_APP_KEY+"\"")
+        buildConfigField("String", "GETUI_APP_SECRET", "\""+GETUI_APP_SECRET+"\"")
+        buildConfigField("String", "XIAOMI_APP_ID", "\""+XIAOMI_APP_ID+"\"")
+        buildConfigField("String", "XIAOMI_APP_KEY", "\""+XIAOMI_APP_KEY+"\"")
+        buildConfigField("String", "OPPO_APP_KEY", "\""+OPPO_APP_KEY+"\"")
+        buildConfigField("String", "OPPO_APP_SECRET", "\""+OPPO_APP_SECRET+"\"")
+        buildConfigField("String", "VIVO_APP_ID", "\""+VIVO_APP_ID+"\"")
+        buildConfigField("String", "VIVO_APP_KEY", "\""+VIVO_APP_KEY+"\"")
+        buildConfigField("String", "MEIZU_APP_ID", "\""+MEIZU_APP_ID+"\"")
+        buildConfigField("String", "MEIZU_APP_KEY", "\""+MEIZU_APP_KEY+"\"")
+        buildConfigField("String", "HUAWEI_APP_ID", "\""+HUAWEI_APP_ID+"\"")
+        manifestPlaceholders = [
+                GETUI_APP_ID : GETUI_APP_ID,
+                GETUI_APP_KEY : GETUI_APP_KEY,
+                GETUI_APP_SECRET : GETUI_APP_SECRET,
+
+                XIAOMI_APP_ID   : XIAOMI_APP_ID,
+                XIAOMI_APP_KEY  : XIAOMI_APP_KEY,
+
+                OPPO_APP_KEY   : OPPO_APP_KEY,
+                OPPO_APP_SECRET  : OPPO_APP_SECRET,
+
+                VIVO_APP_ID   : VIVO_APP_ID,
+                VIVO_APP_KEY  : VIVO_APP_KEY,
+
+                MEIZU_APP_ID    : MEIZU_APP_ID,
+                MEIZU_APP_KEY   : MEIZU_APP_KEY,
+
+                HUAWEI_APP_ID   : HUAWEI_APP_ID
+        ]
+        greendao {
+            schemaVersion 1
+            daoPackage 'com.zgl.greentest.gen'
+            targetGenDir 'src/main/java'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("noblemetal.jks")
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        incremental false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':common_base')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:latest.release'
+
+    //以下3个为必须，
+    implementation 'com.ljx.rxhttp:rxhttp:2.3.5'
+    annotationProcessor 'com.ljx.rxhttp:rxhttp-compiler:2.3.5' //生成RxHttp类
+    implementation 'com.ljx.rxlife2:rxlife-rxjava:2.0.0' //管理RxJava2生命周期，页面销毁，关闭请求
+}

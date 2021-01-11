@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_191A38">#191A38</color>
+    <color name="color_191A38_2">#05191A38</color>
+    <color name="color_191A38_7">#12191A38</color>
+    <color name="color_191A38_8">#14191A38</color>
+    <color name="color_191A38_10">#1A191A38</color>
+    <color name="color_191A38_30">#4D191A38</color>
+    <color name="color_191A38_40">#66191A38</color>
+    <color name="color_191A38_60">#99191A38</color>
+    <color name="color_191A38_80">#CC191A38</color>
+    <color name="color_191A38_99">#99191A38</color>
+    <color name="color_A3A3AF">#A3A3AF</color>
+    <color name="color_A3A3AF_60">#99A3A3AF</color>
+    <color name="color_ff8fc7">#ff8fc7</color>
+    <color name="color_ff656e">#ff656e</color>
+    <color name="color_fbfbfb">#fbfbfb</color>
+    <color name="color_2AB2EC">#2AB2EC</color>
+    <color name="color_FD6D89">#FD6D89</color>
+    <color name="color_2FABEE">#2FABEE</color>
+    <color name="color_4E70F5">#4E70F5</color>
+    <color name="color_FD6BC1">#FD6BC1</color>
+    <color name="color_FE8A9B">#FE8A9B</color>
+    <color name="color_767676">#767676</color>
+    <color name="color_FF647F">#FF647F</color>
+    <color name="color_19001D">#19001D</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="RoundColor">#FD6BC1</color>
+    <color name="TimeTextColor">#FF84AD</color>
+    <color name="RoundFillColor">#FD6BC1</color>
+    <color name="RoundHintTextColor">#666666</color>
+
+    <color name="colorTextSecondary">#bbbbbb</color><!-- 最浅的字体色-->
+    <color name="colorTextPrimary">#333333</color><!-- 最黑的字体颜色 -->
+
+    <color name="color_36334a_30">#4d36334a</color>
+    <color name="color_36334a_80">#cc36334a</color>
+    <color name="cp_colorPrimary">#3F51B5</color>
+    <color name="cp_colorPrimaryDark">#303F9F</color>
+    <color name="cp_colorAccent">#3F51B5</color>
+
+    <color name="cp_color_gray_light">#cdcdcd</color>
+    <color name="cp_color_gray">#999999</color>
+    <color name="cp_color_gray_deep">#666666</color>
+    <color name="cp_color_gray_dark">#333333</color>
+    <color name="cp_color_section_bg">#EDEDED</color>
+    <color name="cp_color_grid_item_bg">#f5f5f5</color>
+
+</resources>

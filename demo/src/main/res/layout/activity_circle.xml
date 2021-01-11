@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <com.appdsn.fastdemo.indicator.LoopViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <com.appdsn.commoncore.widget.smartindicator.SmartIndicator
+        android:id="@+id/indicator1"
+        android:layout_width="100dp"
+        android:layout_height="30dp" />
+
+    <com.appdsn.commoncore.widget.smartindicator.SmartIndicator
+        android:id="@+id/indicator2"
+        android:layout_width="100dp"
+        android:layout_height="30dp" />
+
+    <com.appdsn.commoncore.widget.smartindicator.SmartIndicator
+        android:id="@+id/indicator3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>

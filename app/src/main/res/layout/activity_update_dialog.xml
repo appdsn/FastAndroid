@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_45dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFD514"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@mipmap/gengxinzhong">
+
+                    <TextView
+                        android:id="@+id/tv_findversion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="发现·新版本"
+                        android:textColor="#262626"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/update_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_toRightOf="@id/tv_findversion"
+                        android:text="V 1.1.0"
+                        android:textColor="#262626"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/update_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="28dp"
+                    android:text="Warning:nuclear silo detected.\nWarning:nuclear silo detected.\nWarning:nuclear silo detected.\nWarning:nuclear silo detected.\nWarning:nuclear silo detected."
+                    android:textColor="#262626"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/update_id_ok"
+                    android:layout_width="234dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="@dimen/dimen_28dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="@dimen/dimen_28dp"
+                    android:layout_marginBottom="@dimen/dimen_28dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/ljsq_icon"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingTop="@dimen/dimen_9dp"
+                    android:paddingBottom="@dimen/dimen_9dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:layout_width="254dp"
+            android:layout_height="111dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/pop_head" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/update_id_cancel"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="39dp"
+        android:src="@mipmap/close" />
+</LinearLayout>

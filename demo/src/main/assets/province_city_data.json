@@ -1,0 +1,206 @@
+[
+  {
+    "areaCode": "c1101",
+    "areaName": "北京市",
+    "areaCodeParent": "c11",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c1201",
+    "areaName": "天津市",
+    "areaCodeParent": "c12",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c13",
+    "areaName": "河北省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c14",
+    "areaName": "山西省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c15",
+    "areaName": "内蒙古自治区",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c21",
+    "areaName": "辽宁省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c22",
+    "areaName": "吉林省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c23",
+    "areaName": "黑龙江省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c32",
+    "areaName": "江苏省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c33",
+    "areaName": "浙江省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c34",
+    "areaName": "安徽省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c35",
+    "areaName": "福建省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c36",
+    "areaName": "江西省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c37",
+    "areaName": "山东省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c41",
+    "areaName": "河南省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c42",
+    "areaName": "湖北省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c43",
+    "areaName": "湖南省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c44",
+    "areaName": "广东省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c45",
+    "areaName": "广西壮族自治区",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c46",
+    "areaName": "海南省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c5001",
+    "areaName": "重庆市",
+    "areaCodeParent": "c50",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c51",
+    "areaName": "四川省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c52",
+    "areaName": "贵州省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c53",
+    "areaName": "云南省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c54",
+    "areaName": "西藏自治区",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c61",
+    "areaName": "陕西省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c62",
+    "areaName": "甘肃省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c63",
+    "areaName": "青海省",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c64",
+    "areaName": "宁夏回族自治区",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c65",
+    "areaName": "新疆维吾尔自治区",
+    "areaCodeParent": "0",
+    "cityType": 1
+  },
+  {
+    "areaCode": "c710000",
+    "areaName": "台湾",
+    "areaCodeParent": "c71000",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c810000",
+    "areaName": "香港",
+    "areaCodeParent": "c81000",
+    "cityType": 2
+  },
+  {
+    "areaCode": "c820000",
+    "areaName": "澳门",
+    "areaCodeParent": "c82000",
+    "cityType": 2
+  }
+]

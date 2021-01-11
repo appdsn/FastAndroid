@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSetEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="先设置各种空状态View" />
+
+    <Button
+        android:id="@+id/btnShowEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示空数据View" />
+
+    <Button
+        android:id="@+id/btnShowError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示网络错误View" />
+
+    <Button
+        android:id="@+id/btnShowLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示加载动画View" />
+
+    <Button
+        android:id="@+id/btnShowContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示内容View" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="这是自定义的内容区布局，需要将内容区布局ID固定为content，否则内容区默认是整个XML根布局"
+        android:background="#20000000" />
+</LinearLayout>

@@ -1,0 +1,2 @@
+**common_base** module主要提供一些和业务无关的基础库，包括各种base基类，自己封装的http请求框架，各种工具类Utils,通用的UI框架等。
+该common_base会被common_service依赖

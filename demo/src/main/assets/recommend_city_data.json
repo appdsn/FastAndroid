@@ -1,0 +1,58 @@
+[
+  {
+    "areaCode": "c1101",
+    "areaName": "北京市",
+    "areaCodeParent": "c11",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  },
+  {
+    "areaCode": "c3101",
+    "areaName": "上海市",
+    "areaCodeParent": "c31",
+    "cityType": 2,
+    "isLastArea": true
+  }
+]
